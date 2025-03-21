@@ -77,24 +77,6 @@ e) Edit this remote
 d) Delete this remote
 ```
 
-
-```
-gcloud iam service-accounts add-iam-policy-binding  \
-    --member=user:konrad.burnik@xebia.com --role=roles/storage.objectCreator
-```
-
-```
-gcloud iam service-accounts add-iam-policy-binding konradrclonesa@konrad-burnik-playground.iam.gserviceaccount.com  \
-    --member=user:konrad.burnik@xebia.com --role=roles/owner --project konrad-burnik-playground
-Updated IAM policy for serviceAccount [konradrclonesa@konrad-burnik-playground.iam.gserviceaccount.com].
-bindings:
-- members:
-  - user:konrad.burnik@xebia.com
-  role: roles/owner
-etag: BwYw25SHsXU=
-version: 1
-```
-
 ```
 gcloud projects add-iam-policy-binding konrad-burnik-playground \
             --member='serviceAccount:konradrclonesa@konrad-burnik-playground.iam.gserviceaccount.com' \
