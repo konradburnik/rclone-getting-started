@@ -90,6 +90,8 @@ gcloud projects add-iam-policy-binding konrad-burnik-playground \
 
 Just recreate the bucket with fine-grained access.
 
+
+Test copy from Azure to GCP.
 ```
 rclone copy -v azure:fskburniksparktryout/test testgcp:xebia-konradburnik-test-bucket/test2
 Enter configuration password:
@@ -101,6 +103,7 @@ Transferred:            1 / 1, 100%
 Elapsed time:         0.4s
 ```
 
+Test copy from GCP to Azure.
 ```
 rclone copy -v testgcp:xebia-konradburnik-test-bucket/test2 azure:fskburniksparktryout/test2
 Enter configuration password:
